@@ -26,6 +26,9 @@ main header nav ul li a {
   text-decoration: none;
   color: #00000077;
 }
+main header nav ul li a:hover {
+  color: #372865;
+}
 main header nav ul li a.btn {
   color: #fff;
   background-color: #372865;
@@ -33,10 +36,13 @@ main header nav ul li a.btn {
   padding: 15px 10px;
   border-radius: 5px;
 }
+main header .menu {
+  display: none;
+}
 section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 40px 0;
 }
 section .hero {
   display: flex;
@@ -45,7 +51,7 @@ section .hero {
 }
 section h2 {
   font-size: 1.2rem;
-  color: #fff;
+  color: #ffffffd1;
   padding: 10px 15px;
   border-radius: 5555px;
   font-weight: 200;
@@ -55,7 +61,7 @@ section h2 {
   margin-bottom: 40px;
 }
 section h2 > a {
-  color: #fff;
+  color: #ffffffd1;
   font-weight: 600;
 }
 section h1 {
@@ -68,12 +74,12 @@ section h1 {
 section p {
   max-width: 700px;
   color: #353252;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   line-height: 20px;
 }
 section input {
-  width: 40%;
-  height: 50px;
+  width: 50%;
+  height: 55px;
   /* color: #353252; */
   border-radius: 5px;
   padding: 10px;
@@ -82,10 +88,87 @@ section label {
   color: #fff;
   background-color: #372865;
   border-color: #372865;
-  padding: 12px 10px;
+  padding: 16px 25px;
   border-radius: 5px;
-  margin-left: 10px;
+  margin-left: 23px;
 }
 section .right img {
-  width: 300px;
+  width: 400px;
+}
+footer {
+  max-width: 1200px;
+  margin: 50px auto 30px auto;
+}
+footer .images {
+  display: flex;
+  gap: 10px;
+}
+footer p {
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 0;
+}
+/* responsive */
+@media screen and (max-width: 450px) {
+  main header {
+    max-width: 390px;
+    margin: 0 auto;
+  }
+  main header nav .links {
+    display: none;
+  }
+  main header nav .menu {
+    display: block;
+  }
+  main header nav .menu i {
+    font-size: 25px;
+  }
+  section {
+    padding: 0;
+  }
+  section .left {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  section h2 {
+    font-size: 22px;
+    text-align: center;
+    padding: 5px 10px;
+  }
+  section h1 {
+    text-align: center;
+    font-size: 2.8125rem;
+  }
+  section .right {
+    display: none;
+  }
+  section input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  section label {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    height: 55px;
+  }
+  footer {
+    max-width: 390px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  footer .images {
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 13px;
+  }
+  footer .images img {
+    width: 51px;
+  }
 }
